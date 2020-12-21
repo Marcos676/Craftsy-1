@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="master">
+        <header>
+            <a href="home.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="home.html">SMARTPHONES</a></li>
+                    <li><a href="home.html">TABLET</a></li>
+                    <li><a href="home.html">COMPUTADORAS</a></li>
+                </ul>
+
+                <ul class="log">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="registro.html">REGISTRO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="form">
+                <h1>REGISTRATE</h1>
+                <form action="home.html">
+                    <div class="input">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="texto" id="nombre" placeholder="Ingresá tu nombre">
+                        <p class="aviso">Obligatorio</p>
+                    </div>
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" class="texto" id="email" placeholder="Email">
+                        <p class="aviso">Obligatorio</p>
+                    </div>
+                    <div class="input">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="texto" id="password" placeholder="Password">
+                        <p class="aviso">Obligatorio</p>
+                    </div>
+                    <div>
+                        <h2 class="subtitulos">País de nacimiento</h2>
+                        <select name="paices" id="">
+                            <option value="arg">Argentina</option>
+                            <option value="cl" selected>Chile</option>
+                            <option value="br">Brasil</option>
+                            <option value="cb">Cuba</option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <h2 class="subtitulos">Género</h2>
+                        <input type="radio" name="genero" id="M" value="1"><label for="M">Masculino</label>
+                        <input type="radio" name="genero" id="F" value="2"><label for="F">Femenino</label>
+                        <input type="radio" name="genero" id="U" value="3"><label for="U">Prefiero no
+                            decirlo</label>
+                    </div>
+                    <div class="campos">
+                        <h2 class="subtitulos">Hobbies</h2>
+                        <input type="radio" name="hobbie" id="guitarra" value="guitarra"><label for="guitarra">Guitarra</label>
+                        <input type="radio" name="hobbie" id="futbol" value="futbol"><label for="futbol">Fútbol</label>
+                        <input type="radio" name="hobbie" id="tenis" value="tenis"><label for="tenis">Tenis</label>
+                        <input type="radio" name="hobbie" id="programacion" value="programacion"><label for="programacion">Programación</label>
+                    </div>
+                    <div class="campos">
+                        <h2>Dejanos tus comentarios</h2>
+                        <textarea name="comentario" id="comentario" cols="30" rows="6"></textarea>
+                    </div>
+                    <div class="recordar terminos">
+                        <p>
+                            <input type="checkbox" name="recordar" id="recordar" class="recordar"><label for="recordar">Acepto los términos y condiciones.</label>
+                        </p>
+                    </div>
+                    <button type="submit">Registrarme</button>
+                    <button type="submit">Cancelar</button>
+                </form>
+            </div>
+        </main>
+
+    </div>
+</body>
+
+</html>

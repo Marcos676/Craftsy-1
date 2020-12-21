@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+  }
+  
+  body {
+    background-image: url("../img/bg-2.png");
+    color: rgb(37, 36, 36);
+    font-size: 16px;
+  }
+  
+  div.master {
+    width: 1140px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  
+  /* HEADER */
+  
+  header {
+    background-color: orangered;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  header img {
+    float: left;
+    padding: 15px 13px 10px 13px;
+  }
+  
+  header nav {
+    padding: 0px;
+    overflow: hidden;
+  }
+  
+  header nav ul.nav {
+    float: left;
+    overflow: hidden;
+    padding-left: 5px;
+  }
+  
+  header nav ul.log {
+    float: right;
+    overflow: hidden;
+    padding-right: 10px;
+  }
+  
+  header nav ul li {
+    float: left;
+    list-style: none;
+    margin: 5px 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .5s;
+  }
+  
+  div.master header nav ul li:hover {
+    border-bottom: 2px solid hsla(0, 0%, 100%, 0.842);
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /* font-weight: 600; */
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: all .5s;
+  }
+  header nav ul li a:hover{
+    background-size: 100% 2px;
+  }  
+  
+
+  /* MAIN */
+
+main.home{
+  width: 800px;
+  float: left;
+}
+
+/* productos */
+
+section.productos{
+  background-color:white;
+  overflow: hidden;
+}
+
+section.productos article.producto{
+  margin: 10px 10px 20px 10px;
+  width: 380px;
+  float: left;
+}
+section.productos article.producto img{
+  width: 100%;
+}
+section.productos article.producto h2{
+font-size: 22px;
+}
+section.productos article.producto button{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  background-color: orangered;
+  color: white;
+  border: none;/* saca borde predefinido al boton */
+  cursor: pointer;/* cambia el cursor cuando se para el cursor (sin tine hipervinculo) */
+  transition: all .5s;/* el retardo en la transicion: all(todo) 0.5s (segundos que tarda) */
+}
+
+section.productos article.producto button:hover{
+  background-color: rgba(255, 68, 0, 0.753);
+
+}
+
+
+/* ASIDE */
+
+
+aside{
+  width: 320px;
+  float: right;
+}
+
+aside h2{
+  background-color: white;
+  padding: 10px;
+  margin: 0 0 16px 0;
+  border: 1px solid #c4c4c4;
+}
+
+/* tutoriales */
+aside section.tutoriales div.tutoriales{
+  background-color: white;
+}
+aside section.tutoriales div.tutoriales article{
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid #c4c4c4;
+}                             
+aside section.tutoriales div.tutoriales article img{
+    float: left;
+}
+aside section.tutoriales div.tutoriales article p{
+  float: right;
+  width: 176px;
+}
+
+/* publicidad */
+
+aside section.publicidad{
+  margin-top: 40px;
+}
+aside section.publicidad div.publicidad{
+  background-color: white;
+  border: 1px solid #c4c4c4;
+}
+
+aside section.publicidad div.publicidad article img{
+  margin: 9px;
+}
+
+/* FORMULARIO */
+
+div.form{
+  width: 350px;
+  margin: auto;
+}
+.form h1 {
+  text-align: center;
+  font-size: 33px;
+}
+.input input{
+  width: 100%;
+}
+.input input:hover{
+  border: solid 1px orangered
+}
+select:hover{
+    border: solid 1px orangered
+}
+div .recordar{
+  text-align: right;
+  transition: all .5s;
+  text-decoration: underline transparent;
+}
+div .recordar:hover{
+  text-decoration: underline;
+}
+
+.aviso{
+  color: red;
+  font-size: 15px;
+  margin: 5px auto;
+}
+button {
+  border: none;
+  background-color: rgba(37, 111, 160, 0.822);
+  color: white;
+  padding: 5px 35px;
+  border-radius: 10px;
+  transition: all .3s;
+}
+button:hover{
+  border: rgb(0, 0, 0) 2px solid;
+}
+.subtitulos{
+  display: block;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+.campos input {
+    margin: auto 1px;
+}
+.campos label:hover{
+  font-weight: bold;
+}
+textarea:hover{
+  border: solid 1px orangered
+}
+p input {
+  margin-right: 10px; 
+}
+div .terminos{
+  text-align: left;
+  margin: 20px 0;
+}
